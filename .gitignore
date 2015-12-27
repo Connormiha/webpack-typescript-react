@@ -1,0 +1,10 @@
+.idea
+.DS_Store
+/node_modules
+/build
+/deploy
+/typings
+npm-debug.log
+/test/_*
+/src/js/*.js
+/src/js/.js.map

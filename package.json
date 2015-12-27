@@ -1,0 +1,32 @@
+{
+  "name": "CardsGame",
+  "description": "",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Mikhail Bodrov <connormiha1@gmail.com>",
+  "engines": {
+    "node": ">=5.2.0",
+    "npm": ">=3.3.0"
+  },
+  "scripts": {
+    "postinstall": "node node_modules/tsd/build/cli.js install",
+    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server",
+    "build": "NODE_ENV=production node node_modules/webpack/bin/webpack"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^1.7.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "reflux": "^0.3.0",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.4.2",
+    "ts-loader": "^0.7.2",
+    "tsd": "^0.6.5",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}

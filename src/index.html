@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="app.{%=o.webpack.hash%}.css">
+	<title></title>
+</head>
+<body>
+	<div id="app-name"></div>
+	<section id="content"></section>
+	<div id="buttons"></div>
+	<!-- <script src="deploy/app.js"></script> -->
+	{% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+    <script async src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+    {% } %}
+</body>
+</html>
