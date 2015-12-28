@@ -3,7 +3,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import * as CardsView from './view';
+import * as View from './view';
 
 import {generateRandom} from './generator';
 
@@ -31,7 +31,7 @@ export default class App {
 	}
 
 	public start (): void {
-		this._cardList = <CardsView.ItemsList />;
+		this._cardList = <View.ItemsList />;
 
 		ReactDOM.render(
 		  this._cardList,
@@ -39,12 +39,12 @@ export default class App {
 		);
 
 		ReactDOM.render(
-			<CardsView.AppName name='Empty Typescript+React project' />,
+			<View.AppName name='Empty Typescript+React project' />,
 			document.querySelector('#app-name')
 		);
 
 		ReactDOM.render(
-			<CardsView.BtnGenerate value='Regenerate list' />,
+			<View.BtnGenerate value='Regenerate list' />,
 			document.querySelector('#buttons')
 		);
 	}

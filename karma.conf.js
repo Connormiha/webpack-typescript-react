@@ -14,6 +14,7 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
+            './node_modules/phantomjs-polyfill/bind-polyfill.js',
             './**/*.test.ts',
             './**/*.test.tsx'
         ],
@@ -39,13 +40,14 @@ module.exports = function (config) {
             'karma-webpack',
             'karma-phantomjs-launcher',
             'karma-chrome-launcher',
-            'karma-notify-reporter'
+            'karma-notify-reporter',
+            'karma-spec-reporter'
         ],
 
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress', 'notify'],
+        reporters: ['spec', 'notify'],
 
 
         // web server port

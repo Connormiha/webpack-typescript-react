@@ -6,15 +6,15 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const PARAMS = {};
 
-function extractForProduction(loaders) {
+function extractStyle(loaders) {
 	return ExtractTextPlugin.extract('style', loaders.substr(loaders.indexOf('!')));
 }
 
 let cssLoaders = 'style!css?localIdentName=[hash:base64]';
 let stylusLoaders = `${cssLoaders}!stylus`;
 
-cssLoaders = extractForProduction(cssLoaders);
-stylusLoaders = extractForProduction(stylusLoaders);
+cssLoaders = extractStyle(cssLoaders);
+stylusLoaders = extractStyle(stylusLoaders);
 
 if (NODE_ENV === 'production') {
 	PARAMS.LIBS_ALIASES = {
