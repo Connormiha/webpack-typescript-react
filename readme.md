@@ -4,7 +4,7 @@
 Hello world simple page application.  
 **TypeScript** - compile to ES5
 **Stylus** - css preprocessor  
-**React** **Reflux**
+**React** **Reflux**  
 **Webpack** - build manager  
 **Karma** - unit tests runner  
 **Jasmine** - unit tests library  
