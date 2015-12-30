@@ -1,13 +1,14 @@
 # webpack-typescript-react
 
 Пустой Hello world SPA проект. Используется следующий стек технологий:  
-**TypeScript** - собирается в ES5
+**TypeScript** - собирается в ES5  
 **Stylus** - css препроцессор  
 **React** **Reflux**  
 **Webpack** - сборщик  
 **Karma** - Запускает юнит тесты  
 **Jasmine** - Библиотека для юнит тестов  
 **tsd** - Загружает d.ts файлы из DefinitelyTyped  
+**tslint, stylint** - валидация кода TypeScript и Stylus
 
 Только для node.js начиная 4 версии, т.к. везде используется ES6
 ### Установка
@@ -35,4 +36,9 @@ npm test
 Собирает билд. (папка /build).
 ```
 npm run build
+```
+
+Проверка TypeScript и Stylus кода на валидацию через линтер
+```
+npm run lint
 ```
