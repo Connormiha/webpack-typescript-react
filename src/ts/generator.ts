@@ -10,8 +10,8 @@ const ITEMS: Array<Object> = [];
 
 let id: number = 0;
 
-for (let name: string of NAMES) {
-	for (let job: string of NAMES_PROFFESSIONS) {
+for (let name of NAMES) {
+	for (let job of NAMES_PROFFESSIONS) {
 		ITEMS.push({
 			id: id++,
 			name,
