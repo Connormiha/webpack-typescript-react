@@ -43,3 +43,7 @@ Check TypsScript and Stylus code validation
 ```
 npm run lint
 ```
+
+### Git
+On pre-commit set up hook for checking modified/added files by linter  
+On pre-push run unit tests

@@ -53,7 +53,8 @@
     },
     "config": {
         "ghooks": {
-            "pre-commit": "NODE_ENV=pre_commit npm run lint"
+            "pre-commit": "NODE_ENV=pre_commit npm run lint",
+            "pre-push": "npm test"
         }
     }
 }
