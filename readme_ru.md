@@ -8,7 +8,8 @@
 **Karma** - Запускает юнит тесты  
 **Jasmine** - Библиотека для юнит тестов  
 **tsd** - Загружает d.ts файлы из DefinitelyTyped  
-**tslint, stylint** - валидация кода TypeScript и Stylus
+**tslint, stylint** - валидация кода TypeScript и Stylus  
+**Gulp** для запуска линтеров
 
 Только для node.js начиная 4 версии, т.к. везде используется ES6
 ### Установка
@@ -28,9 +29,14 @@ http://localhost:8080/
 http://localhost:8080/webpack-dev-server/ с обновлением на лету
 ```
 
-Запускает юнит тесты через Карму
+Запускает юнит тесты через Карму. Используется PhantomJS.
 ```
 npm test
+```
+
+Отладка юнит тестов через Карму. Используется Chrome.
+```
+npm run test:dev
 ```
 
 Собирает билд. (папка /build).

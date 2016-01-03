@@ -13,11 +13,12 @@
         "url": "git://github.com/Connormiha/webpack-typescript-react.git"
     },
     "scripts": {
-        "build": "NODE_ENV=production node node_modules/webpack/bin/webpack",
+        "build": "NODE_ENV=production node node_modules/webpack/bin/webpack --config conf/webpack.config.js",
         "lint": "node node_modules/gulp/bin/gulp.js lint",
         "postinstall": "node node_modules/tsd/build/cli.js install",
-        "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server",
-        "test": "node node_modules/karma/bin/karma start --single-run"
+        "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server --config conf/webpack.config.js",
+        "test": "node node_modules/karma/bin/karma start conf/karma.conf.js",
+        "test:dev": "node node_modules/karma/bin/karma start conf/karma.dev.conf.js"
     },
     "devDependencies": {
         "css-loader": "^0.23.1",

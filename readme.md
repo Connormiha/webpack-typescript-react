@@ -9,7 +9,8 @@ Hello world simple page application.
 **Karma** - unit tests runner  
 **Jasmine** - unit tests library  
 **tsd** - DefinitelyTyped libs manager  
-**tslint, stylint** - TypeScript and Stylus code validation
+**tslint, stylint** - TypeScript and Stylus code validation  
+**Gulp** for run linters
 
 Only for Node.js 4+
 ### Install
@@ -29,9 +30,14 @@ http://localhost:8080/
 http://localhost:8080/webpack-dev-server/ with live reload
 ```
 
-Run unit test
+Run unit test. (Single run with PhantomJS)
 ```
 npm test
+```
+
+Debugging unit test. Watch with Chrome
+```
+npm run test:dev
 ```
 
 Compile build. (Are put into ./build folder)
