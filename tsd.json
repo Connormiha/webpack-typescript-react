@@ -19,6 +19,9 @@
     },
     "react/react-addons-test-utils.d.ts": {
       "commit": "a6ff9f6e195a334afd89e4b721d05e9520eee4c0"
+    },
+    "es6-shim/es6-shim.d.ts": {
+      "commit": "6a6ad7068a177c0d7a8a20830626cb63277191c5"
     }
   }
 }

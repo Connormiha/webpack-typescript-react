@@ -6,7 +6,13 @@ const NAMES: Array<string> = [
 const NAMES_PROFFESSIONS: Array<string> = ['Lawyer', 'Animator', 'Accountant', 'Teacher', 'Programmer', 'Guide',
 	'Manager', 'Engineer', 'Doctor', 'Cosmetologist', 'Nurse', 'Stewardess'];
 
-const ITEMS: Array<Object> = [];
+export interface NameItem {
+	id: number;
+	name: string;
+	job: string;
+}
+
+const ITEMS: Array<NameItem> = [];
 
 let id: number = 0;
 
@@ -20,9 +26,9 @@ for (let name of NAMES) {
 	}
 }
 
-export function generateRandom(count: number): Array<Object> {
-	let data: Array<Object> = [];
-	let acceptedList: Array<Object> = ITEMS.slice();
+export function generateRandom(count: number): Array<NameItem> {
+	let data: Array<NameItem> = [];
+	let acceptedList: Array<NameItem> = ITEMS.slice();
 
 	for (let i: number = count; i > 0; i--) {
 		let index: number = Math.round(Math.random() * (acceptedList.length - 1));

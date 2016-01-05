@@ -4,7 +4,7 @@ import * as Reflux from 'reflux';
 import {generateRandom} from './generator';
 
 export const actions = Reflux.createActions(['generateClick']);
-export const eventStore = Reflux.createStore({
+export const eventStore: Reflux.Store = Reflux.createStore({
 	listenables: [actions],
 	onGenerateClick (): void {
 		this.updateList();
