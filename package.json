@@ -1,61 +1,62 @@
 {
-    "name": "Webpack-typescript-react",
-    "description": "Empty project for Single Page Application. Stack technologies: Webpack, TypeScript, React, Jasmine, Karma, Stylus",
-    "version": "0.0.1",
-    "license": "MIT",
-    "author": "Mikhail Bodrov <connormiha1@gmail.com>",
-    "engines": {
-        "node": ">=5.2.0",
-        "npm": ">=3.3.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/Connormiha/webpack-typescript-react.git"
-    },
-    "scripts": {
-        "build": "NODE_ENV=production node node_modules/webpack/bin/webpack --config conf/webpack.config.js",
-        "lint": "node node_modules/gulp/bin/gulp.js lint",
-        "postinstall": "node node_modules/tsd/build/cli.js install",
-        "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server --config conf/webpack.config.js",
-        "test": "node node_modules/karma/bin/karma start conf/karma.conf.js",
-        "test:dev": "node node_modules/karma/bin/karma start conf/karma.dev.conf.js"
-    },
-    "devDependencies": {
-        "css-loader": "^0.23.1",
-        "extract-text-webpack-plugin": "^0.9.1",
-        "file-loader": "^0.8.5",
-        "ghooks": "^1.0.1",
-        "gulp": "^3.9.0",
-        "gulp-stylint": "^3.0.0",
-        "gulp-tslint": "^4.2.2",
-        "html-webpack-plugin": "^1.7.0",
-        "jasmine-core": "^2.4.1",
-        "karma": "^0.13.16",
-        "karma-chrome-launcher": "^0.2.2",
-        "karma-jasmine": "^0.3.6",
-        "karma-notify-reporter": "^0.1.1",
-        "karma-phantomjs-launcher": "^0.2.2",
-        "karma-spec-reporter": "0.0.23",
-        "karma-webpack": "^1.7.0",
-        "phantomjs": "^1.9.19",
-        "phantomjs-polyfill": "0.0.1",
-        "react": "^0.14.5",
-        "react-addons-test-utils": "^0.14.5",
-        "react-dom": "^0.14.5",
-        "reflux": "^0.3.0",
-        "style-loader": "^0.13.0",
-        "stylus-loader": "^1.4.2",
-        "ts-loader": "^0.7.2",
-        "tsd": "^0.6.5",
-        "tslint": "^3.2.1",
-        "typescript": "^1.7.5",
-        "webpack": "^1.12.9",
-        "webpack-dev-server": "^1.14.0"
-    },
-    "config": {
-        "ghooks": {
-            "pre-commit": "NODE_ENV=pre_commit npm run lint",
-            "pre-push": "npm test"
-        }
+  "name": "Webpack-typescript-react",
+  "description": "Empty project for Single Page Application. Stack technologies: Webpack, TypeScript, React, Jasmine, Karma, Stylus",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Mikhail Bodrov <connormiha1@gmail.com>",
+  "engines": {
+    "node": ">=5.2.0",
+    "npm": ">=3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Connormiha/webpack-typescript-react.git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production node node_modules/webpack/bin/webpack --config conf/webpack.config.js",
+    "lint": "node node_modules/gulp/bin/gulp.js lint",
+    "postinstall": "node node_modules/tsd/build/cli.js install",
+    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server --config conf/webpack.config.js",
+    "test": "node node_modules/karma/bin/karma start conf/karma.conf.js",
+    "test:dev": "node node_modules/karma/bin/karma start conf/karma.dev.conf.js"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.0",
+    "file-loader": "^0.8.5",
+    "ghooks": "^1.0.1",
+    "gulp": "^3.9.0",
+    "gulp-stylint": "^3.0.0",
+    "gulp-tslint": "^4.2.2",
+    "html-webpack-plugin": "^1.7.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.18",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-notify-reporter": "^0.1.1",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-spec-reporter": "0.0.23",
+    "karma-webpack": "^1.7.0",
+    "phantomjs": "^1.9.19",
+    "phantomjs-polyfill": "0.0.1",
+    "react": "^0.14.5",
+    "react-addons-test-utils": "^0.14.5",
+    "react-dom": "^0.14.5",
+    "reflux": "^0.3.0",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.4.2",
+    "ts-loader": "^0.7.2",
+    "tsd": "^0.6.5",
+    "tslint": "^3.2.1",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-sources": "^0.1.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "NODE_ENV=pre_commit npm run lint",
+      "pre-push": "npm test"
     }
+  }
 }
