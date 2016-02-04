@@ -10,7 +10,7 @@
         "!./node_modules/**/*"
     ],
     "files": [
-        "./typings/tsd.d.ts"
+        "./typings/browser.d.ts"
     ],
     "atom": {
         "rewriteTsconfig": false
