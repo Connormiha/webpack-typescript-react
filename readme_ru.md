@@ -7,7 +7,7 @@
 **Webpack** - сборщик  
 **Karma** - Запускает юнит тесты  
 **Jasmine** - Библиотека для юнит тестов  
-**tsd** - Загружает d.ts файлы из DefinitelyTyped  
+**Typings** - Загружает d.ts файлы из DefinitelyTyped  
 **tslint, stylint** - валидация кода TypeScript и Stylus  
 **Gulp** для запуска линтеров
 

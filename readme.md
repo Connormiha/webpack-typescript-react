@@ -8,7 +8,7 @@ Hello world simple page application.
 **Webpack** - build manager  
 **Karma** - unit tests runner  
 **Jasmine** - unit tests library  
-**tsd** - DefinitelyTyped libs manager  
+**Typings** - DefinitelyTyped libs manager  
 **tslint, stylint** - TypeScript and Stylus code validation  
 **Gulp** for run linters
 
