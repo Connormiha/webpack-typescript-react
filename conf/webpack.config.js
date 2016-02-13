@@ -77,7 +77,8 @@ module.exports = {
   	],
 	devServer: {
 		host: 'localhost',
-		post: 8080
+		post: 8080,
+		historyApiFallback: true
 	}
 };
 
