@@ -30,7 +30,7 @@ if (NODE_ENV === 'production') {
 }
 
 module.exports = {
-	entry: './src/ts/main.ts',
+	entry: './src/ts/app.tsx',
 	output: {
 		path: PARAMS.FOLDER,
 		filename: 'app.js'
