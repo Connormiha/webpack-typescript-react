@@ -1,5 +1,7 @@
 # webpack-typescript-react
-[Описание на русском языке](readme_ru.md)     
+[Описание на русском языке](readme_ru.md)  
+
+## Package depracated, use instead [webpack-typescript-react-redux](https://github.com/Connormiha/webpack-typescript-react-redux)     
 
 Hello world simple page application.  
 **TypeScript** - compile to ES5  

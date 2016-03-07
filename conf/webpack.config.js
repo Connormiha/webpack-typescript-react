@@ -17,16 +17,12 @@ cssLoaders = extractStyle(cssLoaders);
 stylusLoaders = extractStyle(stylusLoaders);
 
 if (NODE_ENV === 'production') {
-	PARAMS.LIBS_ALIASES = {
-		react: `${__dirname}/node_modules/react/dist/react.min.js`,
-		'react-dom': `${__dirname}/node_modules/react-dom/dist/react-dom.min.js`
-	}
 	PARAMS.watch = false;
-	PARAMS.FOLDER = `${__dirname}/build`;
+	PARAMS.FOLDER = `${__dirname}/../build`;
 } else {
 	PARAMS.sourceMap = 'inline-source-map';
 	PARAMS.watch = true;
-	PARAMS.FOLDER = `${__dirname}/deploy`;
+	PARAMS.FOLDER = `${__dirname}/../deploy`;
 }
 
 module.exports = {
@@ -73,7 +69,12 @@ module.exports = {
 				//removeComments: true
 			}
 		}),
-		new ExtractTextPlugin("app.[hash].css")
+		new ExtractTextPlugin("app.[hash].css"),
+		new webpack.DefinePlugin({
+			'process.env': {
+					'NODE_ENV': JSON.stringify(NODE_ENV)
+			}
+		})
   	],
 	devServer: {
 		host: 'localhost',

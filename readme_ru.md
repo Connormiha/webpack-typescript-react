@@ -1,5 +1,7 @@
 # webpack-typescript-react
 
+## Пакет больше не поддерживается. Его заменил [webpack-typescript-react-redux](https://github.com/Connormiha/webpack-typescript-react-redux) 
+
 Пустой Hello world SPA проект. Используется следующий стек технологий:  
 **TypeScript** - собирается в ES5  
 **Stylus** - css препроцессор  
